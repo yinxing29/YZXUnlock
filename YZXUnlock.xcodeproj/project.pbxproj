@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851C66822295582E0004D4C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66812295582E0004D4C9 /* AppDelegate.m */; };
+		851C668A2295582F0004D4C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851C66892295582F0004D4C9 /* Assets.xcassets */; };
+		851C668D2295582F0004D4C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851C668B2295582F0004D4C9 /* LaunchScreen.storyboard */; };
+		851C66902295582F0004D4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C668F2295582F0004D4C9 /* main.m */; };
+		851C669A2295582F0004D4C9 /* YZXUnlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66992295582F0004D4C9 /* YZXUnlockTests.m */; };
+		851C66A52295582F0004D4C9 /* YZXUnlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66A42295582F0004D4C9 /* YZXUnlockUITests.m */; };
+		851C66B62295583C0004D4C9 /* YZXTouchIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C66B32295583B0004D4C9 /* YZXTouchIDViewController.xib */; };
+		851C66B72295583C0004D4C9 /* YZXTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66B42295583B0004D4C9 /* YZXTouchIDViewController.m */; };
+		851C66C622955A790004D4C9 /* YZXPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66BE22955A790004D4C9 /* YZXPointView.m */; };
+		851C66C722955A790004D4C9 /* YZXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66C322955A790004D4C9 /* YZXKeychain.m */; };
+		851C66C822955A790004D4C9 /* YZXGesturesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66C522955A790004D4C9 /* YZXGesturesView.m */; };
+		851C66CD22955A8D0004D4C9 /* YZXGesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66CB22955A8D0004D4C9 /* YZXGesturesViewController.m */; };
+		851C66CE22955A8D0004D4C9 /* YZXGesturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C66CC22955A8D0004D4C9 /* YZXGesturesViewController.xib */; };
+		851C66D222955FD10004D4C9 /* YZXUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C66D022955FD10004D4C9 /* YZXUnlockViewController.m */; };
+		851C66D322955FD10004D4C9 /* YZXUnlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C66D122955FD10004D4C9 /* YZXUnlockViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		851C66962295582F0004D4C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851C66752295582E0004D4C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851C667C2295582E0004D4C9;
+			remoteInfo = YZXUnlock;
+		};
+		851C66A12295582F0004D4C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851C66752295582E0004D4C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851C667C2295582E0004D4C9;
+			remoteInfo = YZXUnlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		851C667D2295582E0004D4C9 /* YZXUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZXUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851C66802295582E0004D4C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		851C66812295582E0004D4C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		851C66892295582F0004D4C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		851C668C2295582F0004D4C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		851C668E2295582F0004D4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851C668F2295582F0004D4C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		851C66952295582F0004D4C9 /* YZXUnlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZXUnlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851C66992295582F0004D4C9 /* YZXUnlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZXUnlockTests.m; sourceTree = "<group>"; };
+		851C669B2295582F0004D4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851C66A02295582F0004D4C9 /* YZXUnlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZXUnlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851C66A42295582F0004D4C9 /* YZXUnlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZXUnlockUITests.m; sourceTree = "<group>"; };
+		851C66A62295582F0004D4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851C66B32295583B0004D4C9 /* YZXTouchIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZXTouchIDViewController.xib; sourceTree = "<group>"; };
+		851C66B42295583B0004D4C9 /* YZXTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZXTouchIDViewController.m; sourceTree = "<group>"; };
+		851C66B52295583B0004D4C9 /* YZXTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXTouchIDViewController.h; sourceTree = "<group>"; };
+		851C66BE22955A790004D4C9 /* YZXPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZXPointView.m; sourceTree = "<group>"; };
+		851C66BF22955A790004D4C9 /* YZXGesturesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXGesturesView.h; sourceTree = "<group>"; };
+		851C66C022955A790004D4C9 /* YZXPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXPointView.h; sourceTree = "<group>"; };
+		851C66C222955A790004D4C9 /* YZXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXKeychain.h; sourceTree = "<group>"; };
+		851C66C322955A790004D4C9 /* YZXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZXKeychain.m; sourceTree = "<group>"; };
+		851C66C422955A790004D4C9 /* YZXDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXDefine.h; sourceTree = "<group>"; };
+		851C66C522955A790004D4C9 /* YZXGesturesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZXGesturesView.m; sourceTree = "<group>"; };
+		851C66CA22955A8D0004D4C9 /* YZXGesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXGesturesViewController.h; sourceTree = "<group>"; };
+		851C66CB22955A8D0004D4C9 /* YZXGesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZXGesturesViewController.m; sourceTree = "<group>"; };
+		851C66CC22955A8D0004D4C9 /* YZXGesturesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZXGesturesViewController.xib; sourceTree = "<group>"; };
+		851C66CF22955FD10004D4C9 /* YZXUnlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZXUnlockViewController.h; sourceTree = "<group>"; };
+		851C66D022955FD10004D4C9 /* YZXUnlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZXUnlockViewController.m; sourceTree = "<group>"; };
+		851C66D122955FD10004D4C9 /* YZXUnlockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZXUnlockViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		851C667A2295582E0004D4C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C66922295582F0004D4C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C669D2295582F0004D4C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		851C66742295582E0004D4C9 = {
+			isa = PBXGroup;
+			children = (
+				851C667F2295582E0004D4C9 /* YZXUnlock */,
+				851C66982295582F0004D4C9 /* YZXUnlockTests */,
+				851C66A32295582F0004D4C9 /* YZXUnlockUITests */,
+				851C667E2295582E0004D4C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		851C667E2295582E0004D4C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				851C667D2295582E0004D4C9 /* YZXUnlock.app */,
+				851C66952295582F0004D4C9 /* YZXUnlockTests.xctest */,
+				851C66A02295582F0004D4C9 /* YZXUnlockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		851C667F2295582E0004D4C9 /* YZXUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				851C66802295582E0004D4C9 /* AppDelegate.h */,
+				851C66812295582E0004D4C9 /* AppDelegate.m */,
+				851C66C922955A8D0004D4C9 /* Gestures */,
+				851C66BD22955A790004D4C9 /* YZXGesturesUnlock */,
+				851C66B22295583B0004D4C9 /* TouchID */,
+				851C66892295582F0004D4C9 /* Assets.xcassets */,
+				851C668B2295582F0004D4C9 /* LaunchScreen.storyboard */,
+				851C668E2295582F0004D4C9 /* Info.plist */,
+				851C668F2295582F0004D4C9 /* main.m */,
+			);
+			path = YZXUnlock;
+			sourceTree = "<group>";
+		};
+		851C66982295582F0004D4C9 /* YZXUnlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				851C66992295582F0004D4C9 /* YZXUnlockTests.m */,
+				851C669B2295582F0004D4C9 /* Info.plist */,
+			);
+			path = YZXUnlockTests;
+			sourceTree = "<group>";
+		};
+		851C66A32295582F0004D4C9 /* YZXUnlockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				851C66A42295582F0004D4C9 /* YZXUnlockUITests.m */,
+				851C66A62295582F0004D4C9 /* Info.plist */,
+			);
+			path = YZXUnlockUITests;
+			sourceTree = "<group>";
+		};
+		851C66B22295583B0004D4C9 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				851C66B52295583B0004D4C9 /* YZXTouchIDViewController.h */,
+				851C66B42295583B0004D4C9 /* YZXTouchIDViewController.m */,
+				851C66B32295583B0004D4C9 /* YZXTouchIDViewController.xib */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
+		851C66BD22955A790004D4C9 /* YZXGesturesUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				851C66C422955A790004D4C9 /* YZXDefine.h */,
+				851C66C022955A790004D4C9 /* YZXPointView.h */,
+				851C66BE22955A790004D4C9 /* YZXPointView.m */,
+				851C66BF22955A790004D4C9 /* YZXGesturesView.h */,
+				851C66C522955A790004D4C9 /* YZXGesturesView.m */,
+				851C66C122955A790004D4C9 /* Keychain */,
+			);
+			path = YZXGesturesUnlock;
+			sourceTree = "<group>";
+		};
+		851C66C122955A790004D4C9 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				851C66C222955A790004D4C9 /* YZXKeychain.h */,
+				851C66C322955A790004D4C9 /* YZXKeychain.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		851C66C922955A8D0004D4C9 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				851C66CF22955FD10004D4C9 /* YZXUnlockViewController.h */,
+				851C66D022955FD10004D4C9 /* YZXUnlockViewController.m */,
+				851C66D122955FD10004D4C9 /* YZXUnlockViewController.xib */,
+				851C66CA22955A8D0004D4C9 /* YZXGesturesViewController.h */,
+				851C66CB22955A8D0004D4C9 /* YZXGesturesViewController.m */,
+				851C66CC22955A8D0004D4C9 /* YZXGesturesViewController.xib */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		851C667C2295582E0004D4C9 /* YZXUnlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851C66A92295582F0004D4C9 /* Build configuration list for PBXNativeTarget "YZXUnlock" */;
+			buildPhases = (
+				851C66792295582E0004D4C9 /* Sources */,
+				851C667A2295582E0004D4C9 /* Frameworks */,
+				851C667B2295582E0004D4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZXUnlock;
+			productName = YZXUnlock;
+			productReference = 851C667D2295582E0004D4C9 /* YZXUnlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		851C66942295582F0004D4C9 /* YZXUnlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851C66AC2295582F0004D4C9 /* Build configuration list for PBXNativeTarget "YZXUnlockTests" */;
+			buildPhases = (
+				851C66912295582F0004D4C9 /* Sources */,
+				851C66922295582F0004D4C9 /* Frameworks */,
+				851C66932295582F0004D4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851C66972295582F0004D4C9 /* PBXTargetDependency */,
+			);
+			name = YZXUnlockTests;
+			productName = YZXUnlockTests;
+			productReference = 851C66952295582F0004D4C9 /* YZXUnlockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		851C669F2295582F0004D4C9 /* YZXUnlockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851C66AF2295582F0004D4C9 /* Build configuration list for PBXNativeTarget "YZXUnlockUITests" */;
+			buildPhases = (
+				851C669C2295582F0004D4C9 /* Sources */,
+				851C669D2295582F0004D4C9 /* Frameworks */,
+				851C669E2295582F0004D4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851C66A22295582F0004D4C9 /* PBXTargetDependency */,
+			);
+			name = YZXUnlockUITests;
+			productName = YZXUnlockUITests;
+			productReference = 851C66A02295582F0004D4C9 /* YZXUnlockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		851C66752295582E0004D4C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "尹星";
+				TargetAttributes = {
+					851C667C2295582E0004D4C9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					851C66942295582F0004D4C9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 851C667C2295582E0004D4C9;
+					};
+					851C669F2295582F0004D4C9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 851C667C2295582E0004D4C9;
+					};
+				};
+			};
+			buildConfigurationList = 851C66782295582E0004D4C9 /* Build configuration list for PBXProject "YZXUnlock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 851C66742295582E0004D4C9;
+			productRefGroup = 851C667E2295582E0004D4C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				851C667C2295582E0004D4C9 /* YZXUnlock */,
+				851C66942295582F0004D4C9 /* YZXUnlockTests */,
+				851C669F2295582F0004D4C9 /* YZXUnlockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		851C667B2295582E0004D4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851C668D2295582F0004D4C9 /* LaunchScreen.storyboard in Resources */,
+				851C66CE22955A8D0004D4C9 /* YZXGesturesViewController.xib in Resources */,
+				851C66B62295583C0004D4C9 /* YZXTouchIDViewController.xib in Resources */,
+				851C66D322955FD10004D4C9 /* YZXUnlockViewController.xib in Resources */,
+				851C668A2295582F0004D4C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C66932295582F0004D4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C669E2295582F0004D4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		851C66792295582E0004D4C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851C66C822955A790004D4C9 /* YZXGesturesView.m in Sources */,
+				851C66B72295583C0004D4C9 /* YZXTouchIDViewController.m in Sources */,
+				851C66C722955A790004D4C9 /* YZXKeychain.m in Sources */,
+				851C66CD22955A8D0004D4C9 /* YZXGesturesViewController.m in Sources */,
+				851C66902295582F0004D4C9 /* main.m in Sources */,
+				851C66C622955A790004D4C9 /* YZXPointView.m in Sources */,
+				851C66822295582E0004D4C9 /* AppDelegate.m in Sources */,
+				851C66D222955FD10004D4C9 /* YZXUnlockViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C66912295582F0004D4C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851C669A2295582F0004D4C9 /* YZXUnlockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C669C2295582F0004D4C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851C66A52295582F0004D4C9 /* YZXUnlockUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		851C66972295582F0004D4C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851C667C2295582E0004D4C9 /* YZXUnlock */;
+			targetProxy = 851C66962295582F0004D4C9 /* PBXContainerItemProxy */;
+		};
+		851C66A22295582F0004D4C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851C667C2295582E0004D4C9 /* YZXUnlock */;
+			targetProxy = 851C66A12295582F0004D4C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		851C668B2295582F0004D4C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851C668C2295582F0004D4C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		851C66A72295582F0004D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		851C66A82295582F0004D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		851C66AA2295582F0004D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZXUnlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.project.YZXUnlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		851C66AB2295582F0004D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZXUnlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.project.YZXUnlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		851C66AD2295582F0004D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZXUnlockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.project.YZXUnlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YZXUnlock.app/YZXUnlock";
+			};
+			name = Debug;
+		};
+		851C66AE2295582F0004D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZXUnlockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.project.YZXUnlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YZXUnlock.app/YZXUnlock";
+			};
+			name = Release;
+		};
+		851C66B02295582F0004D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZXUnlockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.project.YZXUnlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YZXUnlock;
+			};
+			name = Debug;
+		};
+		851C66B12295582F0004D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZXUnlockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.project.YZXUnlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YZXUnlock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		851C66782295582E0004D4C9 /* Build configuration list for PBXProject "YZXUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851C66A72295582F0004D4C9 /* Debug */,
+				851C66A82295582F0004D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851C66A92295582F0004D4C9 /* Build configuration list for PBXNativeTarget "YZXUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851C66AA2295582F0004D4C9 /* Debug */,
+				851C66AB2295582F0004D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851C66AC2295582F0004D4C9 /* Build configuration list for PBXNativeTarget "YZXUnlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851C66AD2295582F0004D4C9 /* Debug */,
+				851C66AE2295582F0004D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851C66AF2295582F0004D4C9 /* Build configuration list for PBXNativeTarget "YZXUnlockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851C66B02295582F0004D4C9 /* Debug */,
+				851C66B12295582F0004D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 851C66752295582E0004D4C9 /* Project object */;
+}

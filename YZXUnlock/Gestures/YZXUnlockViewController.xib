@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YZXUnlockViewController">
+            <connections>
+                <outlet property="gestureButton" destination="IcG-vI-D5e" id="TSA-Mz-zHX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-vI-D5e">
+                    <rect key="frame" x="0.0" y="318.5" width="187.5" height="30"/>
+                    <state key="normal" title="手势解锁"/>
+                    <connections>
+                        <action selector="gestureUnlock:" destination="-1" eventType="touchUpInside" id="Vcj-4P-3DK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yP9-AG-CId">
+                    <rect key="frame" x="187.5" y="318.5" width="187.5" height="30"/>
+                    <state key="normal" title="指纹解锁"/>
+                    <connections>
+                        <action selector="touchIDUnlock:" destination="-1" eventType="touchUpInside" id="OZR-R7-HLM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kl7-yo-xiI">
+                    <rect key="frame" x="141.5" y="537" width="92" height="30"/>
+                    <state key="normal" title="忘记手势密码"/>
+                    <connections>
+                        <action selector="forgetGesturesPasswordPressed:" destination="-1" eventType="touchUpInside" id="Vgv-rS-e7h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IcG-vI-D5e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="C0K-fr-3hs"/>
+                <constraint firstItem="yP9-AG-CId" firstAttribute="width" secondItem="IcG-vI-D5e" secondAttribute="width" id="URx-sg-mJU"/>
+                <constraint firstItem="IcG-vI-D5e" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Zto-nB-3Jh"/>
+                <constraint firstItem="Kl7-yo-xiI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dWz-zZ-OWw"/>
+                <constraint firstAttribute="bottom" secondItem="Kl7-yo-xiI" secondAttribute="bottom" constant="100" id="ivA-wu-4Mq"/>
+                <constraint firstAttribute="trailing" secondItem="yP9-AG-CId" secondAttribute="trailing" id="lLi-BL-M6O"/>
+                <constraint firstItem="yP9-AG-CId" firstAttribute="centerY" secondItem="IcG-vI-D5e" secondAttribute="centerY" id="who-es-Ngc"/>
+                <constraint firstItem="IcG-vI-D5e" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/2" id="xvq-aV-5hv"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
