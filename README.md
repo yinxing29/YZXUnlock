@@ -1,22 +1,25 @@
 # unlock
 手势和指纹解锁
 
-模拟手势解锁和指纹解锁。(说明：1.手势解锁颜色取的QQ安全中心颜色。2.本demo只是简单实现了手势解锁，设置错误次数以及保存手势密码方式等逻辑后续会慢慢添加)
+模拟手势解锁和指纹解锁。(说明：1.手势解锁颜色取的QQ安全中心颜色。)
 
-1.第一次下载需要登录，登录只要保证用户名和密码输入框不为空即可。
+**导入方法：**
 
-2.登录成功后直接跳转解锁页面，有两个选择，如果未设置过手势，则是“设置手势”和“指纹解锁”，否则为“手势解锁”和“指纹解锁”。
+1. 通过cocoapods导入
 
-3.
-3-1.点击“设置手势”：进入设置手势页面，设置你的手势，点击“确定”设置成功（手势密码不得少于4个点），进入“选择解锁方式”页面，可验证是否成功。
+> 在Podfile中添加`pod 'YZXUnlock'`。
 
-3-2.重新进入应用，点击“手势解锁”：输入您上次的手势密码可解锁，进入home页面，如果输入错误会给出提示，然后返回手势页面。
+2. 下载`zip`将工程中的`YZXGesturesUnlock`文件夹拖入工程。
 
-3-3.点击“指纹解锁”：第一次会提醒你是否开启指纹解锁，如果点“NO”，进入home页面，下次进入会继续提醒，如果点击“YES”，进入home页面，下次重新进入应用直接验证指纹。
+**使用方法：**
+1. 通过`initWithFrame`方法初始化`YZXGesturesView`初始化界面。
+2. 设置`YZXGesturesView`的block`gestureBlock`，`unlockBlock`，`settingBlock`。
 
-4.首页可重置手势密码，点击“重置手势密码”，跳转“手势设置页面”，重新设置手势密码，设置成功，进入“选择解锁方式”页面，可验证是否成功。
+    > 1. **gestureBlock:**设置成功的block，返回设置的手势密码。 
+    > 2. **unlockBlock:**返回设置结果（成功或者失败），用于自己处理成功或者失败的其他操作。
+    > 3. **settingBlock：**设置的密码少于4为的时候调用。
+    
+3. 设置`手势密码`，点击确认的时候，调用`YZXKeychain`的`yzx_savePassword:service:account:`方法，将`YZXGesturesView`的`gestureBlock`返回的密码保存到`keychain`中。
 
-5.忘记手势密码：点击“忘记手势密码”，跳转“手势设置页面”，重新设置手势密码，设置成功，进入“选择解锁方式”页面，可验证是否成功。
-
-![image](https://yx29.oss-cn-beijing.aliyuncs.com/unlock11.png)       ![image](https://yx29.oss-cn-beijing.aliyuncs.com/unlock22.png?Expires=1550480538&OSSAccessKeyId=TMP.AQHpaxJCB8wK6ESawGyicgp__RWlSvbYVFCwfLTvYjOfvYXObErzY4WWwMjeAAAwLAIUFbgS1PIUCvdHTiKE-3nckPQZVAQCFBg3hShd5QrY-1MpJSGQbfVyhRrg&Signature=33KRYuAz6XXLlhKbheRBu3kB9oQ%3D)
-![image](https://yx29.oss-cn-beijing.aliyuncs.com/unlock33.png)       ![image](https://yx29.oss-cn-beijing.aliyuncs.com/unlock44.png?Expires=1550480552&OSSAccessKeyId=TMP.AQHpaxJCB8wK6ESawGyicgp__RWlSvbYVFCwfLTvYjOfvYXObErzY4WWwMjeAAAwLAIUFbgS1PIUCvdHTiKE-3nckPQZVAQCFBg3hShd5QrY-1MpJSGQbfVyhRrg&Signature=BaHq1njOLVn%2F93iKMUiAFuKgd7g%3D)
+效果图展示：
+![image](https://yx29.oss-cn-beijing.aliyuncs.com/%E6%89%8B%E5%8A%BF%E8%A7%A3%E9%94%81.png)
